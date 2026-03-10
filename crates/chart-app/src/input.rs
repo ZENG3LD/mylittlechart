@@ -7040,6 +7040,18 @@ impl ChartApp {
                         eprintln!("[ChartApp] server_key_delete: {}", label);
                     }
                 }
+                "sign_in" => {
+                    self.pending_open_url = Some("https://mylittlechart.org/login".to_string());
+                    eprintln!("[ChartApp] sign_in: opening browser to mylittlechart.org/login");
+                }
+                "open_dashboard" => {
+                    self.pending_open_url = Some("https://mylittlechart.org/dashboard".to_string());
+                    eprintln!("[ChartApp] open_dashboard: opening browser to mylittlechart.org/dashboard");
+                }
+                "sign_out" => {
+                    self.pending_updater_cmd = Some("logout".to_string());
+                    eprintln!("[ChartApp] sign_out: sending logout command to updater");
+                }
                 _ => {
                     eprintln!("[ChartApp] user_settings unhandled action: {}", action);
                 }
