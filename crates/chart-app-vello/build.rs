@@ -51,7 +51,7 @@ fn main() {
         res.set_icon("../../assets/mascot/icon.ico");
         res.set("ProductName",      "My Little Chart");
         res.set("CompanyName",      "mylittlechart.org");
-        res.set("FileDescription",  "My Little Chart — Trading Terminal");
+        res.set("FileDescription",  "mylittlechart");
         res.set("LegalCopyright",   "Copyright © 2026 mylittlechart.org");
         res.set("OriginalFilename", "mylittlechart.exe");
         res.set("ProductVersion",   &version);
